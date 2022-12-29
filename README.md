@@ -14,11 +14,14 @@ $ cd mypkg
 
 # talker・listener
 このノードを機能させるにはターミナルが2つ必要です。
+
 まず、talkerはcountupというトピックを通じ、Int16型のメッセージを送ります。
+
 その後、listener側がtalkerが送ってきたInt16型のメッセージを順番に受信した通りに、エディタへと出力します。
 
 ## talker・listenerの実行例
 今回の例では1つ目のターミナルをtalker側、2つ目をlistener側とします。
+よって出力結果はターミナル2の方に出ます。
 
 * ターミナル1
 ```
@@ -28,7 +31,21 @@ $ ros2 run mypkg talker
 ```
 $ros2 run mypkg listener
 ```
-
+* ターミナル2(出力結果)
+```
+[INFO] [1672339755.782609300] [listener]: Listen: 0
+[INFO] [1672339756.270829500] [listener]: Listen: 1
+[INFO] [1672339756.769829400] [listener]: Listen: 2
+[INFO] [1672339757.270826700] [listener]: Listen: 3
+[INFO] [1672339757.769282700] [listener]: Listen: 4
+[INFO] [1672339758.270047300] [listener]: Listen: 5
+[INFO] [1672339758.770658500] [listener]: Listen: 6
+[INFO] [1672339759.269420100] [listener]: Listen: 7
+[INFO] [1672339759.769975100] [listener]: Listen: 8
+[INFO] [1672339760.270004400] [listener]: Listen: 9
+[INFO] [1672339760.770247600] [listener]: Listen: 10
+(以下略)
+```
 
 
 
