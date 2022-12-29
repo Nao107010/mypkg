@@ -1,13 +1,12 @@
 # mypkg
-
 このリポジトリは未来ロボティクス学科のロボットシステム学の授業の課題で作ったものをあげるためのものです。
+![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
 # インストール手順
-ノードを使用するには、リポジトリをクローンしたあと、mypkgへ移動してください。
-
+このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
+ROS2インストール後、以下のようにリポジトリをクローンしてください。
 ```
-$ git clone https://github.com/Nao107010/mypkg
-$ cd mypkg
+$ git clone https://github.com/Nao107010/mypkg.git
 ```
 
 # 動作確認済み環境
