@@ -10,7 +10,7 @@ $ git clone https://github.com/Nao107010/mypkg.git
 $ cd mypkg
 ```
 
-* 今回使用するノードのtalker・listenerはさらにmypkgへと移動した先、talker_listener.launchはlaunchへと移動した先にあります。
+* 今回使用するノードのtalker・listenerはさらにmypkgへと移動した先、talk_listen.launchはlaunchへと移動した先にあります。
 
 # talker・listener
 このノードを機能させるにはターミナルが2つ必要です。
@@ -29,7 +29,7 @@ $ ros2 run mypkg talker
 ```
 * ターミナル2
 ```
-$ros2 run mypkg listener
+$ ros2 run mypkg listener
 ```
 * ターミナル2(出力結果)
 ```
@@ -44,10 +44,31 @@ $ros2 run mypkg listener
 [INFO] [1672339759.769975100] [listener]: Listen: 8
 [INFO] [1672339760.270004400] [listener]: Listen: 9
 [INFO] [1672339760.770247600] [listener]: Listen: 10
-(以下略)
+(以下省略)
 ```
+# launchファイル
+このファイルにあるtalk_listen.launchは複数のノードを一度に立ち上げるものとなっています。
 
+## launchファイルの実行例
 
+```
+$ ros2 launch mypkg talk_listen.launch.py
+
+[INFO] [talker-1]: process started with pid [410]
+[INFO] [listener-2]: process started with pid [412]
+[listener-2] [INFO] [1672342664.266903500] [listener]: Listen: 0
+[listener-2] [INFO] [1672342664.747423900] [listener]: Listen: 1
+[listener-2] [INFO] [1672342665.247433700] [listener]: Listen: 2
+[listener-2] [INFO] [1672342665.748210900] [listener]: Listen: 3
+[listener-2] [INFO] [1672342666.248159600] [listener]: Listen: 4
+[listener-2] [INFO] [1672342666.748484100] [listener]: Listen: 5
+[listener-2] [INFO] [1672342667.247912400] [listener]: Listen: 6
+[listener-2] [INFO] [1672342667.747910700] [listener]: Listen: 7
+[listener-2] [INFO] [1672342668.247886700] [listener]: Listen: 8
+[listener-2] [INFO] [1672342668.747972200] [listener]: Listen: 9
+[listener-2] [INFO] [1672342669.247801700] [listener]: Listen: 10
+(以下省略)
+```
 
 # 動作確認済み環境
 以下の環境で動作確認がされています。
