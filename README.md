@@ -4,7 +4,7 @@
 ![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
-* ROS2のインストールが終了した後、こちらを入力し、mypkgをインストールしてください
+* ROS2のインストールが終了した後、こちらを入力し、mypkgをインストールしてください。
 ```
 $ git clone https://github.com/Nao107010/mypkg.git
 ```
