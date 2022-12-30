@@ -4,13 +4,12 @@
 ![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
-* ノードを使用するには、リポジトリをクローンし、mypkgへ移動してください。
+* ROS2のインストールが終了した後、こちらを入力し、mypkgをインストールしてください
 ```
 $ git clone https://github.com/Nao107010/mypkg.git
-$ cd mypkg
 ```
 
-* 今回使用するノードのtalker・listenerはさらにmypkgへと移動した先、talk_listen.launchはlaunchへと移動した先にあります。
+* 今回使用するノードのtalker・listenerはmypkgファイルへと移動した先、talk_listen.launchはlaunchファイルへと移動した先にあります。
 
 # talker・listener
 このノードを機能させるにはターミナルが2つ必要です。
