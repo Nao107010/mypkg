@@ -4,7 +4,7 @@
 ![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
-* ROS2インストール後、以下のようにリポジトリをクローンし、mypkgへ移動してください。
+* ノードを使用するには、リポジトリをクローンし、mypkgへ移動してください。
 ```
 $ git clone https://github.com/Nao107010/mypkg.git
 $ cd mypkg
@@ -74,7 +74,6 @@ $ ros2 launch mypkg talk_listen.launch.py
 
 # 動作確認済み環境
 以下の環境で動作確認がされています。
-* OS Windows10
 * Ubuntu 22.04
 * ROS2 humble
 
