@@ -1,17 +1,15 @@
 # mypkg
-このリポジトリは未来ロボティクス学科のロボットシステム学の授業の課題で作ったものをあげるためのものです。
 
 ![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
-* このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
-* ワークスペースを作成し、そのワークスペースへ移動したのちに、mypkgをクローンしてください。
+* このリポジトリはROS2のパッケージです。
+* ROS2を未インストールの方はインストールをお願いします。
+* インストール完了後、リポジトリをクローンしてください。
 ```
-$ mkdir -p ros2_ws/src
-$ cd ~/ros2_ws/src
 $ git clone https://github.com/Nao107010/mypkg.git
 ```
 
-* 今回使用するノードのtalker・listenerはmypkgファイルへと移動した先、talk_listen.launchはlaunchファイルへと移動した先にあります。
+* 使用するノードであるtalker、listenerはmypkgファイルへと移動した先、talk_listen.launchはlaunchファイルへと移動した先にあります。
 
 # talker・listener
 このノードを機能させるにはターミナルが2つ必要です。
