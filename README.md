@@ -4,8 +4,10 @@
 ![test](https://github.com/Nao107010/mypkg/actions/workflows/test.yml/badge.svg)
 
 * このリポジトリはROS2のパッケージなので、未インストール方はインストールをお願いします。
-* ROS2のインストールが終了した後、こちらを入力し、mypkgをインストールしてください。
+* ワークスペースを作成し、そのワークスペースへ移動したのちに、mypkgをクローンしてください。
 ```
+$ mkdir -p ros2_ws/src
+$ cd ~/ros2_ws/src
 $ git clone https://github.com/Nao107010/mypkg.git
 ```
 
